@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './index.css'
@@ -32,13 +32,24 @@ import './index.css'
 const Card = ({ title }) => {
 
    const [hasliked,sethasliked]=useState(false);
+
+   const [count,setCount]=useState(0);
+
+
+   useEffect(()=>{
+    console.log(`${title} has been liked: ${hasliked}`);
+   },[hasliked]);
   
+   //here hamne liya ja change hooga then useeffect ka use karoo 
+   // data ko store karne me upyoog hota hai
   return ( 
     <div className='cards'>
-      <h2>{title} is the card </h2>
+      <h2>{title} is the card - {count ? count : null} </h2>
       <button onClick={()=>sethasliked(!hasliked)}>
         {hasliked ? '❤️': '💌'}
       </button>
+      
+      <button onClick={()=>setCount(count+1)}>Click</button>
     </div>
   );
 };
@@ -72,4 +83,7 @@ const Welcome = () =>{
 //     </div>
 //   );
 // };
+
+
+
 export default Welcome;
