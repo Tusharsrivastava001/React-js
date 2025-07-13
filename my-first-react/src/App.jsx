@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
+import './index.css'
 //class component
 
 // function App(){
@@ -30,13 +30,20 @@ import './App.css'
 // }
 
 const Card = ({ title }) => {
-  return (
+
+   const [hasliked,sethasliked]=useState(false);
+  
+  return ( 
     <div className='cards'>
       <h2>{title} is the card </h2>
+      <button onClick={()=>sethasliked(!hasliked)}>
+        {hasliked ? '❤️': '💌'}
+      </button>
     </div>
   );
 };
 const Welcome = () =>{
+  //here haslinked is the variable
   return (
     <div className='card-container'>
       <h1>There are many card here you will see</h1>
@@ -48,4 +55,21 @@ const Welcome = () =>{
   );
 };
 
+
+
+//counter application
+// function Counter(){
+//   const [count,setcount]=useState(0);
+//   const increament=()=>{
+//     setcount(count+1);
+//   };
+
+//   return (
+//     <div>
+//       <p>Here is the counter application</p>
+//       <p>count: {count}</p>
+//       <button onClick={increament}>click</button>
+//     </div>
+//   );
+// };
 export default Welcome;

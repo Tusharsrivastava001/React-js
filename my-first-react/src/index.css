@@ -21,17 +21,23 @@ h1{
 }
 .card-container{
   padding: 50px;
-  background-color: rosybrown;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
+  background-color: rgb(83, 73, 73);
+
 }
 
 .cards{
-  
+    margin-bottom: 20px;
       border: 1px solid black;
       margin-right: 5px;
+      
       background-color: hsl(216, 11.60%, 16.90%);
     
+}
+.cards button{
+  
+  background-color: rgb(63, 63, 75);
+  color: wheat;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
 }
