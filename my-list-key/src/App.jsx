@@ -3,21 +3,18 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-const users = [
-  { id: 101, name: 'Alice' },
-  { id: 102, name: 'Bob' },
-  { id: 103, name: 'Charlie' }
+const users=[
+  {id: 100,name: "alice"},
+  {id: 101,name: "alsice"},
+  {id: 102,name: "aliece"},
 ];
-
 function numberlist(){
   return (
     <div>
-      {/* list.map((varibel)=>(
-        {number}
-      )) */}
       {users.map((user)=>(
-        <li>{user.id} - {user.name}</li>
-      ))}
+        <li>{user.id} -  {user.name}</li>
+      )
+      )}
     </div>
   );
 }
