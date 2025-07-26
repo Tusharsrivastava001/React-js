@@ -3,7 +3,6 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-
 function simpleform(){
 const [name,setname]=useState('');  // it is used to store the value
 const [email,setemail]=useState('');
