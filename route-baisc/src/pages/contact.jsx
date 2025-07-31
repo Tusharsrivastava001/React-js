@@ -1,10 +1,10 @@
 import React from "react";
 
-function contact(){
+function Contact(){
     return(
         <div>
             <h3>Hello from the contant</h3>
         </div>
     );
 }
-export default contact;
+export default Contact;
