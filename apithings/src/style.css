@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app{
+ background-color: #869ec1;
+padding: 40px;
+border-radius: 5px ;
+}
+#inp{
+  width: 100%;
+  padding: 10px;
+  height: 4px;
+border-radius: 5px;
+  
+}
+.box {
+ margin-top: 10px;
+ padding: 2px;
+ color: #000000;
+}

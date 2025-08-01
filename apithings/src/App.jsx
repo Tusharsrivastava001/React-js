@@ -13,8 +13,9 @@ useEffect(()=>{
   return(
     <div>
         <h1>Post: </h1>
-        {data ? data.map((items)=><p> {items.id} {items.title}</p>) //here we are using becauus it will iterta though the each elements
-        : <p>Loading </p>}
+        {data ? data.map((items)=><p key={items.id}>  {items.title}</p>) //here we are using becauus it will iterta though the each elements
+        
+        : <p>Loading.....</p>}
     </div>
   );
 }
